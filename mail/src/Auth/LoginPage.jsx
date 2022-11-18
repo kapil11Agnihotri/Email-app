@@ -5,8 +5,10 @@ import classes from "./LoginPage.module.css";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { authActions } from "../store/AuthSlice";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+    const location=useNavigate()
   const [isLogin, setIsLogin] = useState(false);
   const emailInputRef = useRef();
   const passwordInputRef = useRef();
@@ -32,6 +34,7 @@ const LoginPage = () => {
         const response=await axios.post(url,obj)
         const data=await response.data
         dispatch(authActions.login(data.idToken))
+        location('/Home')
   };
 
   return (
