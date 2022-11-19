@@ -3,20 +3,21 @@
     width: 95%;
     max-width: 25rem;
     border-radius: 6px;
-    background-color: #e83549;
+    background-color:whitesmoke;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     padding: 1rem;
     text-align: center;
+    box-shadow:5px 10px #888888 ;
    
   }
   
   .auth h1 {
     text-align: center;
-    color: white;
+    color: rgb(234, 115, 115);
   }
   .auth h4 {
     text-align: center;
-    color: white;
+    color: rgb(234, 115, 115);;
   }
   
   .control {
@@ -25,7 +26,7 @@
   
   .control label {
     display: block;
-    color: white;
+    color:rgb(234, 115, 115);;
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
@@ -66,12 +67,12 @@
   .actions .toggle {
     margin-top: 1rem;
     background-color: transparent;
-    color: grey;
+    color:rgb(234, 115, 115);;
     border: none;
     padding: 0.15rem 1.5rem;
   }
   
   .actions .toggle:hover {
     background-color: transparent;
-    color: white;
+    color: red;
   }

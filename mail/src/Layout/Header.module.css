@@ -1,0 +1,44 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px ;
+    background:white;
+    color: rgb(132, 120, 120);
+   
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    margin:2px;
+}
+.left img{
+   margin: 15px;
+    height: 30px
+}
+.left h4{
+    margin-left:1px;
+    position: relative;
+
+}
+.middle{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 35%;
+    
+}
+.middle input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: medium;
+    
+    
+}
+.right{
+    text-align: center;
+    margin:12px
+}

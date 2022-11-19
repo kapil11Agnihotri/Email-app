@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   const dispatch = useDispatch();
-  const isLoggedIn=useSelector(state=>state.auth.login)
+  const isLoggedIn=useSelector(state=>authActions.login())
 
   useEffect(() => {
     dispatch(authActions.initialToken());
@@ -18,7 +18,8 @@ const App = () => {
     <BrowserRouter>
       <Routes>
        <Route path='/' element={<LoginPage />}/>
-         <Route path= '/Home' element={<Home />} />
+        {isLoggedIn && <Route path= '/Home' element={<Home />} />}
+        
       </Routes>
     </BrowserRouter>
   );

@@ -1,9 +1,22 @@
-import React from 'react'
+import React from "react";
+import Header from "./Header";
+import ComposeMail from "./ComposeMail";
+import "./Home.css";
+import Maillist from "./Maillist";
 
 const Home = () => {
   return (
-    <div>Welcome to your mailbox</div>
-  )
-}
+    <>
+      <Header />
+      <div className="home">
+        <ComposeMail />
+        
+        <div className="mail">
+        <Maillist />
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Home
+export default Home;

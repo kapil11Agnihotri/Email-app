@@ -1,0 +1,8 @@
+.home{
+    display:flex;
+}
+.mail{
+    margin: 25px;
+    position: relative;
+    left: 200px;
+}
