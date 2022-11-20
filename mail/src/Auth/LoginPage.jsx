@@ -34,6 +34,7 @@ const LoginPage = () => {
         const response=await axios.post(url,obj)
         const data=await response.data
         dispatch(authActions.login(data.idToken))
+        dispatch(authActions.email(enteredEmail))
         location('/Home')
   };
 

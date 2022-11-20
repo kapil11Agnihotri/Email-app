@@ -6,3 +6,13 @@
     position: relative;
     left: 200px;
 }
+.icon{
+    display: flex;
+    padding: 10px;
+}
+.para{
+    margin: 10px;
+    position: relative;
+    left: 15px;
+    
+}
