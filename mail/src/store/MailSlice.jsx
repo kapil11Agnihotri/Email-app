@@ -4,6 +4,7 @@ const mailSlice = createSlice({
   name: "mails",
   initialState: {
     mail: [],
+    inbox:[],
     change:false
   },
   reducers: {
@@ -12,6 +13,17 @@ const mailSlice = createSlice({
       state.mail = action.payload;
       state.change=true
     },
+    inboxMail(state,action){
+      console.log(action.payload)
+       state.inbox=action.payload
+       state.change=true
+    },
+   
+    removeFromInbox(state,action){
+      console.log(action.payload)
+    state.inbox.splice(action.payload,1)
+    state.change=true
+    }
   },
 });
 

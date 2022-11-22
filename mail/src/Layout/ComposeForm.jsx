@@ -37,13 +37,22 @@ const ComposeForm = () => {
       email: enteredEmail,
       subject: enteredSubject,
       mailText: content,
+      read:false,
       date:new Date()
     };
+    const emailUrl=enteredEmail.replace('@','').replace('.','')
+    
     const response = await axios.post(
       `https://mail-1d965-default-rtdb.firebaseio.com/sent${finelEmail}.json`,
       obj
     );
     const data = await response.data;
+    console.log(response);
+    const res = await axios.post(
+      `https://mail-1d965-default-rtdb.firebaseio.com/globalMail/sent${emailUrl}.json`,
+      obj
+    );
+    const mailData = await response.data;
     console.log(response);
   };
 

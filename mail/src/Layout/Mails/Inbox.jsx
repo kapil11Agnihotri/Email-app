@@ -1,17 +1,20 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import Home from "../Home";
+import { useSelector } from "react-redux";
 import Maillist from "./Maillist";
 
 const Inbox = () => {
-  const mails = useSelector((state) => state.mails.mail);
-  console.log(mails);
-
+  const mails = useSelector((state) => state.mails.inbox);
+  console.log("inbox", mails);
 
   return (
-    <div>
-      <Home/>
-     <Maillist mails={mails}/>
+    <div className="inbox">
+      <div>
+        <Home />
+      </div>
+      <div className="mail">
+        <Maillist mails={mails} />
+      </div>
     </div>
   );
 };

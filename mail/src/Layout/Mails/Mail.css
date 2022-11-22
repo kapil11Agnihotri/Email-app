@@ -1,0 +1,9 @@
+.list{
+    padding: 13px;
+    display: flex;
+    justify-content: space-around;
+    background-color:whitesmoke;
+    width: 1000px;
+    border-bottom: 5px solid darkgray
+}
+
