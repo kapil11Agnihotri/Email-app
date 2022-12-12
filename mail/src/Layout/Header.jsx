@@ -7,7 +7,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Button, IconButton } from "@mui/material";
 import { useDispatch } from "react-redux";
 import { authActions } from "../store/AuthSlice";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -22,6 +22,7 @@ const Header = () => {
     <>
 
     <div className={classes.header}>
+      <Link to="/Home">
       <div className={classes.left}>
         <IconButton>
           <MenuIcon style={{ margin: "8px" }} />
@@ -29,6 +30,7 @@ const Header = () => {
         <img src={Logo} alt="logo" />
         <h4>Mymail</h4>
       </div>
+      </Link>
       <div className={classes.middle}>
         <SearchIcon />
         <input placeholder="search mail" type="text" />

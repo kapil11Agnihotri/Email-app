@@ -35,11 +35,11 @@ const  deleteMail=(index)=>{
       {data.map((items, index) => {
         console.log("read", items);
         return (
-          <div>
+          <div style={{display:'flex'}}>
           <div
             className="list"
             style={{
-              background: `${items.read === false ? "darkgrey" : "white"}`,
+              background: `${items.read === false ? "darkgrey" : "whiteSmoke"}`,
             }}
             onClick={() => {
               // const temp={

@@ -18,6 +18,10 @@ export const fetchdetails = (finelEmail) => {
       const dataSentBox=await res.data
       dispatch(mailActions.updatedMail(dataSentBox)) 
     };
+    // setInterval(()=>{
+    //   getdata()
+    // },2000)
     getdata()
+    
   };
 };
